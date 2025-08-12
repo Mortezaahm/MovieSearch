@@ -16,7 +16,7 @@ function MovieCard({ movie }) {
     <div className="movie-card">
       <div className="movie-poster">
         <img
-          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          src={`${import.meta.env.VITE_IMAGE_URL}${movie.poster_path}`}
           alt={movie.title}
         />
         <div className="movie-overlay">
